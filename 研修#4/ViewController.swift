@@ -9,12 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var label : UILabel!
+    
+    @IBOutlet var question1button : UIButton!
+    @IBOutlet var question2button : UIButton!
+    @IBOutlet var question3button : UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+     
+        setUI()
+        //引数と戻り値
+    
+
+    @IBAction func mae() {
+        index = index - 1
+        setUI()
     }
 
+    @IBAction func tugi() {
+        index = index + 1
+        setUI()
 
 }
 
